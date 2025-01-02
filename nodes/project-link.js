@@ -22,6 +22,7 @@ module.exports = function (RED) {
     // therefore, assume project owned if `projectID` is set
     const OWNER_TYPE = RED.settings.flowforge.projectID ? 'instance' : 'application'
     const featureEnabled = RED.settings.flowforge.projectLink.featureEnabled !== false
+    const deployedFromBranch = true
 
     // #region JSDoc
 
